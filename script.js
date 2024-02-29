@@ -7,6 +7,9 @@ for (let index = 0; index < acc.length; index++) {
     })
 }
 
+signIn.addEventListener('click', ()=>{
+  window.location.href = 'signin.html'
+})
 
 
     tailwind.config = {
