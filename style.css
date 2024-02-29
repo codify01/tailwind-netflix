@@ -19,10 +19,12 @@
         padding: 0.5rem 0.75rem;
 
     }
+    
 }
 
 @layer base {
     .item .activeIcon {
         @apply hidden
     }
+    
 }
