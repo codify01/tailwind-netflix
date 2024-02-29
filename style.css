@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .item .icon {
+        transform: rotate(0deg);
+    }
+    
+    .item.active .icon {
+        transform: rotate(45deg);
+    }
+    
+    .item:not(.active) .content{
+        overflow: hidden;
+        height: 0px;
+    }
+    .item.active .content{
+        padding: 0.5rem 0.75rem;
+
+    }
+}
+
+@layer base {
+    .item .activeIcon {
+        @apply hidden
+    }
+}
